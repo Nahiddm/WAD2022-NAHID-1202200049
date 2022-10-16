@@ -47,16 +47,9 @@ body{
 	text-align:center;
 	height:500px;
 	width:600px;
+;
 }
-.gmap_canvas {
-	margin:auto;
-	overflow:hidden;
-	height:500px;
-	width:600px;
-	border-radius: 20px;
-	position: center;
 
-}
 
 *{
 	margin: 0;
