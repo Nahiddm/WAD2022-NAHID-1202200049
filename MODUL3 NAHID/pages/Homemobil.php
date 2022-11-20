@@ -40,8 +40,10 @@
                 <div class="col">
                     <center><h1>Selamat Datang  Di Showroom Nahid</h1><center>
                     <h6><p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni aliquid totam tempore, eum fuga saepe repellendus? Fugiat, consequuntur quaerat.</p></h6>
-                    <Section id="design">
+                    <img src="pages/logo-ead.png" alt="Logo" height="32" width="auto">
+                    <center><h6>Ahmad Nahid Ma'aly_1202200049</h6></center>
                     <a href="pages/ListCarmobil.php" class="btn btn-primary p-2 px-4 mb-5">MyCar</a>
+                    <Section id="design">
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-inner">
