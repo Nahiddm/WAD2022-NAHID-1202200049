@@ -28,7 +28,7 @@ if(isset($_GET['id'])) {
                             <a class="nav-link" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/pages/ListCarmobil.php">Mycar</a>
+                            <a class="nav-link active" href="ListCarmobil.php">Mycar</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@ if(isset($_GET['id'])) {
             <p>Detail mobil <?=$item['merk_mobil'].' '.$item['nama_mobil']?></p>
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="/assets/images/<?=$item['foto_mobil']?>" class="img-fluid">
+                    <img src="../assets/images/<?=$item['foto_mobil']?>" class="img-fluid">
                 </div>
                 <div class="col-lg-6">
                     <form method="post" action="../config/insert.php">

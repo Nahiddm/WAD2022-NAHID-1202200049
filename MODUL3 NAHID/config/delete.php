@@ -7,14 +7,14 @@ if(isset($_GET['id'])) {
     $sql = "DELETE FROM showroom_nahid WHERE id_mobil=$id";
     $query = mysqli_query($db, $sql);
 
-    if($delete) {
-        session_start();
-        $_SESSION['msg'] = 'dsuccess';
-        redirect('../pages/ListCarmobil.php');
-    } else {
-        session_start();
-        $_SESSION['msg'] = 'dfailed';
-        return redirect('../pages/ListCarmobil.php');
-    }
+    if ($update) {
+        echo "<script>alert('Data telah ditambahkan')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=../pages/ListCarmobil.php'>";
+        // header('Location: ../ListCarmobil.php?status=sukses');
+        } else {
+        echo "<script>alert('Data gagal ditambahkan')</script>";
+        header('Location: ../pages/ListCarmobil.php?status=gagal');
+        }
+    
 }
 ?>

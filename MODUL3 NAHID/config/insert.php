@@ -16,25 +16,20 @@ if(include("konneksi.php")) {
         $paym = $_POST['pembayaran'];
 
         $query = "INSERT INTO showroom_nahid (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) 
-                    VALUE ('','$carr', '$ownr', '$merk', '$date', '$desc', '$imgs', '$paym')";
+                    VALUE ('$carr', '$ownr', '$merk', '$date', '$desc', '$imgs', '$paym')";
         $insert =mysqli_query ($db,$query);
 
-        if($insert) {
-            session_start();
-            $_SESSION['msg'] = 'success';
-            redirect('../pages/ListCarmobil.php');
+        if ($query) {
+            echo "<script>alert('Data telah ditambahkan')</script>";
+            echo "<meta http-equiv='refresh' content='1 url=../pages/ListCarmobil.php'>";
+            // header('Location: ../ListCarmobil.php?status=sukses');
         } else {
-            session_start();
-            $_SESSION['msg'] = 'failed';
-            return redirect('../pages/ListCarmobil.php');
+            echo "<script>alert('Data gagal ditambahkan')</script>";
+            header('Location: ../pages/addmobil.php?status=gagal');
         }
-    } else {
-        echo "Gagal upload gambar";
     }
 } else {
-    session_start();
-    $_SESSION['msg'] = 'cfailed';
-    return redirect('../pages/ListCarmobil.php');
+    die("masih salah");
 }
 
 ?>

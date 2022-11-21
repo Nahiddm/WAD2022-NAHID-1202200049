@@ -32,7 +32,7 @@
                 <label for="mobil" class="fw-bold">Nama Mobil</label>
                 <input type="text" id="mobil" class="form-control mb-3" name="mobil" placeholder="Nama Mobil" required>
                 <label for="pemilik" class="fw-bold">Nama Pemilik</label>
-                <input type="text" id="pemilik" class="form-control mb-3" name="pemilik" value="Ahmad Nahid Ma'aly-1202200049" readonly>
+                <input type="text" id="pemilik" class="form-control mb-3" name="pemilik" value="Ahmad Nahid Maaly 1202200049" readonly>
                 <label for="merk" class="fw-bold">Merk</label>
                 <input type="text" id="merk" class="form-control mb-3" name="merk" placeholder="Merk Mobil" required>
                 <label for="date" class="fw-bold">Tanggal Beli</label>

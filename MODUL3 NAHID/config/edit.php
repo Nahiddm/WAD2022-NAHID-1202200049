@@ -27,14 +27,14 @@ if($upload) {
 }
 
 $update = mysqli_query($db, $sql);
+    if ($update) {
+    echo "<script>alert('Data telah ditambahkan')</script>";
+    echo "<meta http-equiv='refresh' content='1 url=../pages/ListCarmobil.php'>";
+    // header('Location: ../ListCarmobil.php?status=sukses');
+    } else {
+    echo "<script>alert('Data gagal ditambahkan')</script>";
+    header('Location: ../pages/addmobil.php?status=gagal');
+    }
 
-if($update) {
-    session_start();
-    $_SESSION['msg'] = 'success';
-    redirect('../pages/ListCarmobil.php');
-} else {
-    session_start();
-    $_SESSION['msg'] = 'failed';
-    return redirect('../pages/ListCarmobil.php');
-}
+
 ?>
