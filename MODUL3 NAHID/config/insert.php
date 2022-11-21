@@ -1,6 +1,6 @@
     <?php
 
-    if(include("")) {
+    if(include("konneksi.php")) {
         $fileName = $_FILES['foto']['name'];
         $tmpName = $_FILES['foto']['tmp_name'];
         $dirTarget = "../assets/images/";
@@ -16,7 +16,7 @@
             $paym = $_POST['pembayaran'];
 
             $query = "INSERT INTO showroom_nahid (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) 
-                        VALUE ('$carr', '$ownr', '$merk', '$imgs', '$paym')";
+                        VALUE ('$carr', '$ownr', '$merk','$date','$desc', '$imgs', '$paym')";
             $insert =mysqli_query ($db,$query);
 
             if ($query) {

@@ -1,7 +1,7 @@
     <?php
     
 
-    $db = mysqli_connect();
+    $db = mysqli_connect('localhost','root','','modul3');
 
     
     ?>
