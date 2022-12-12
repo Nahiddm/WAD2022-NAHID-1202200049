@@ -26,7 +26,8 @@
     Route::get('password', [UserController::class, 'password'])->name('password');
     Route::post('password', [UserController::class, 'password_action'])->name('password.action');
     Route::get('logout', [UserController::class, 'logout'])->name('logout');
-    Route::('product', ProductController::class);
+
+    Route::resource('product', ProductController::class);
     Route::get('destroy', [ProductController::class, 'destroy'])->name('destroy');
 
 

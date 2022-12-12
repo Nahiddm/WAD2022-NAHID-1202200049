@@ -45,7 +45,7 @@
                     <div class="card">
                         <div class="card-body">
                             <img src="/image/{{$car->image}}" class="img-thumbnail">
-                            <h4 class="mt-3">{{$car->name}}</h4>
+                            <h4 class="mt-3">{{$car->brand}} {{$car->name}}</h4>
                             <div class="mb-4">{{$car->description}}</div>
                             <form action="{{ route('product.destroy', $car->id) }}" method="post">
                             <div class="modal-body">

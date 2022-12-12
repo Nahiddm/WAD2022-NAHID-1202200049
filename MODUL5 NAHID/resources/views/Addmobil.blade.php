@@ -29,6 +29,7 @@
                 <h1>Add Car</h1>
                 <p>Tambah Mobil Baru Anda ke List Show Room</p>
                 <form action="/product" method="POST" enctype="multipart/form-data">
+                    @csrf
                 
                     
                     <input type="hidden" name="user_id" value="{{ Auth::user()->id}}">

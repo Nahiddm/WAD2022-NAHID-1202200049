@@ -40,7 +40,9 @@
                         @auth
                         <a class="btn btn-primary" href="{{ route('logout') }}">Logout</a>
                         @endauth
+                        @guest
                         <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
+                        @endguest
                     </ul>
                 </div>
             </div>
