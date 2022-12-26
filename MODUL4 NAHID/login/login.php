@@ -64,7 +64,7 @@
                     </div>
 
                     <p>Anda belum punya akun? 
-                        <a href="register.php">Daftar</a>
+                        <a href="./login/register.php">Daftar</a>
                     </p>
                 </div>
             

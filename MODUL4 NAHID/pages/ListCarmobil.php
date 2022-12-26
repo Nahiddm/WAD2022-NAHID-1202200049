@@ -59,7 +59,7 @@ include('../config/konneksi.php');
                             <h4 class="mt-3"><?=$item['merk_mobil'].' '.$item['nama_mobil']?></h4>
                             <div class="mb-4"><?=$item['deskripsi']?></div>
                             <a href="../pages/Detailmobil.php?id=<?=$item['id_mobil']?>" class="btn btn-primary px-5 rounded-pill">Detail</a>
-                            <a href="../config/delete.php?id=<?=$item['id_mobil']?>" class="btn btn-danger px-5 rounded-pill">Delete</a>
+                            <a href="../config/delete.php?id=<?=$item['id']?>" class="btn btn-danger px-5 rounded-pill">Delete</a>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-if(include("connector.php")) {
+if(include("connect.php")) {
     $fileName = $_FILES['foto']['name'];
     $tmpName = $_FILES['foto']['tmp_name'];
     $dirTarget = "../assets/images/";

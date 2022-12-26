@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost:3306", "root", "", "wad_modul4_nahid");
+$db = mysqli_connect("localhost:3300", "root", "", "wad_modul4_nahid");
 
     $email = $_POST["email"];
     $password = $_POST["password"];
